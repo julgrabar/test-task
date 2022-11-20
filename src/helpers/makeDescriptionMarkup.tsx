@@ -12,7 +12,7 @@ export const makeDescriptionMarkup = (text: string) =>
         return (
           <ul className="list-[square] list-inside m:list-outside">
             {el
-              .split(".")
+              .split(". ")
               .filter((el) => el.trim() !== "")
               .map((el, ind) => (
                 <li key={ind}>{el}</li>
